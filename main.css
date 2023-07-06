@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, 
+section h2,
+section h3{
+    font-family: 'Bungee', cursive; /*Insere a font do google fonts, no cabeçalho, no h2 e no h3 da section*/
+    font-weight: normal; /*Remove a função automatica de negrito das fontes*/
+}
+
+body, input, textarea{
+    font-family: 'Roboto', sans-serif; /*Insere a font do google fonts no body*/
+}
+
+header{
+    padding: 16px 0;
+    background-color: #182c61; /*Cor de fundo do cabeçalho*/
+    color: #ecf0f1; /*Cor da fonte do cabeçalho*/
+}
+
+header nav li{
+    display: inline; /*Faz o menu ficar lado a lado ao invés de um em cima do outro*/
+    margin-left: 16px; /*Da o espaçamento entre os intens do Menu*/
+    font-size: 18px; /*Aumenta a fonte do Cabeçalho*/
+}
+
+header nav li a{
+    color: #ecf0f1; /*Cor da fonte do Menu*/
+    text-decoration: none; /*Remove o Sublinhado dos Links*/
+}
+
+.container{ /*Serve para centralizar o conteudo e fazer a distribuição do logo e do Menu*/
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container{ /*Usei a mesma configuração pra por a imagem da loja e o texto lado a lado*/
+    display: flex; /*Separa o Titulo do site do Menu*/
+    align-items: center; /*Centraliza os elementos verticalmente*/
+    justify-content: space-between; /*Posiciona o Menu na extrema direita*/
+}
+
+.brand-list img{
+    height: 24px; /*Diminue o tamanho das imagens das marcas*/
+}
+
+.brand-list li{
+    display: inline; /*Faz as imagens das marcas ficarem lado a lado ao invés de um em cima da outra*/
+    margin-right: 8px; /*Cria um espaçamento lateral entre as imagens de marca*/
+}
+
+section .container{
+    align-items: flex-start; /*Remove a centralização Vertical da section*/
+}
+
+section{
+    padding: 24px 0; /*Cria o espacamento vertical entre o cabeçalho e a section*/
+}
+
+section h2{
+    margin-bottom: 16px; /*Cria um Espaçamento vertical entre o Subtitulo "Sobre a Loja" e o Texto da seção*/
+}
+
+section{
+    color: #182c61; /*Muda a cor de todo o texto da Section*/
+}
+
+section p{
+    margin-bottom: 8px; /*Cria um Espaçamento vertical entre os paragrafos*/
+}
+
+.store-front{
+    margin-right: 32px; /*Cria um Espaçamento lateral entre a imagem da loja e os outros elementos*/
+}
+
+.social-links img{ /*Diminue o tamanho das imagens das redes sociais*/
+    height: 24px;
+}
+
+.social-links li{
+    display: inline; /*Faz as imagens das redes sociais ficarem lado a lado ao invés de um em cima da outra*/
+    margin-right: 8px; /*Cria um Espaçamento lateral entre as imagens das redes sociais*/
+}
+
+.social-links li a{
+    text-decoration: none; /*Remove qualquer decoração do elemento*/
+}
+
+#contact .container{ /*Desfaz o display flex da linha 46 para as subseções*/
+    display: block;
+}
+
+.contact-methods{ 
+    display: flex; /*Adiciona a propiedade display flex apenas as subseções*/
+    justify-content: space-between; /*Cria o espaçamento lateral entre os elementos da seção contato*/
+}
+
+form input,
+form textarea,
+form button{ 
+    display: block; /*Faz os formularios, botões e textarea ficarem um ao lado do outro, desfazendo o display flex da linha 93 apenas para os formularios*/
+    width: 320px; /*Aumenta a largura dos elementos*/
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea{
+    resize: none; /*Remove a função de redimencionar o tamanho do textarea pelo usuario*/
+    height: 180px; /*Aumenta a area util do text area*/ 
+}
+
+section h3{
+    margin-bottom: 16px; /*Cria um espaçamento vertical entre os subtitulos e os elementos na seção contato*/
+}
+
+form button{
+    background-color: #182c61; /*Muda a cor do fundo do Botão*/
+    color: #ecf0f1; /*Muda a cor da fonte do botão*/
+    border: none; /*Remove a borda do Botão*/
+    cursor: pointer; /*Muda a seta do mouse para a mão quando o usuario passa o mouse em cima do botão*/
+}
+
+form button:hover{
+    background-color: #314e9e; /*Muda a cor de fundo do botão temporariamente quando o usuario passa o mouse em cima do botão*/
+}
+
+input:focus, textarea:focus{
+    outline-color: #182c61; /*Muda a cor da borda do textarea temporariamente quando o usuario passa o mouse em cima do botão*/
+}
+
+footer{
+    background-color: #182c61; /*Muda a cor do fundo do Rodapé*/
+    color: #ecf0f1; /*Muda a cor da fonte do rodapé*/
+    padding: 16px 0; /*Cria o espaçamento vertical entre a seção contato e o rodapé*/
+}
